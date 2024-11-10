@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <title>GitHub Profile Viewer</title>
+</head>
+<body>
+  <!-- Header with title and description for overview and branding -->
+  <header>
+    <h1>GitHub Profile Viewer</h1>
+    <p>Search and view detailed GitHub profiles and repositories in a simplified format.</p>
+  </header>
+
+  <!-- Dark mode toggle button (emoji instead of text) -->
+  <button id="theme-toggle" class="toggle-button">🌙</button>
+
+  <!-- Form for searching GitHub usernames and button for clearing search -->
+  <form class="user-form" id="form">
+    <input type="text" placeholder="Enter GitHub Username" id="search" />
+    <button type="button" id="clear-search" class="clear-search">Clear</button>
+  </form>
+
+  <!-- Main container for user profile card and repository details -->
+  <main id="main"></main>
+
+  <!-- JavaScript libraries and script files -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</body>
+</html>
